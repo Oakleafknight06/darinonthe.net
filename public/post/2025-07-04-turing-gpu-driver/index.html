@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+
+  <body>
+    
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+  <header>
+    <h1>Power Management and driver issues for mobile Turing GPUs on Linux</h1>
+  </header>
+
+  <div>
+    <h2 id="description">Description</h2>
+<p>Power management is broken (simply not implemented by Nvidia) on mobile Turing-based GPUs in both the nvidia proprietary drivers and nvidia-open drivers.
+Battery life is better with Noveau + NVK + GSP karg. Performance is better with nvidia-open, but then battery life is terrible because the GPU never goes into a power down / sleep state.</p>
+<p>You can use this command to monitor the current power state of the GPU:
+<code>watch --interval 0.1 cat /sys/bus/pci/devices/0000:00:01.0/power_state</code></p>
+<h2 id="switching-drivers">Switching Drivers</h2>
+<p>This setup is specific to <a href="https://secureblue.dev">secureblue</a>, which I use. The kernel arguments and drivers used will apply to other systems, but are not as easy to switch between. Refer to secureblue documentation for the list of Nvidia kargs.</p>
+<h3 id="nvidia-open-to-noveau--nvk--gsp-karg">Nvidia-open to Noveau + NVK + GSP karg</h3>
+<ol>
+<li><code>ujust remove-kargs-nvidia</code> (do not reboot afterwards)</li>
+<li><code>rpm-ostree kargs --append=nouveau.config=NvGspRm=1</code> (do not reboot afterwards)</li>
+<li>Rebase to <code>main</code> image</li>
+</ol>
+<h3 id="the-prior-setup-back-to-nvidia-open">The prior setup back to nvidia-open</h3>
+<ol>
+<li><code>rpm-ostree kargs --delete=nouveau.config=NvGspRm=1</code> (do not reboot afterwards)</li>
+<li><code>ujust set-kargs-nvidia</code> (do not reboot afterwards)</li>
+<li>Rebase to <code>nvidia-open</code> image</li>
+</ol>
+
+  </div>
+
+
+      </div>
+    </main>
+
+    <footer class="site-footer h-card">
+	<data class="u-url" href=""></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+	<a href="https://oakleafknight06.github.io">Oakleafknight's Internet Corner</a> © 2025 by <a href="https://github.com/oakleafknight06">Oakleafknight06</a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+      </div>
+
+      <div class="footer-col footer-col-2">
+	      
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>site.description</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
