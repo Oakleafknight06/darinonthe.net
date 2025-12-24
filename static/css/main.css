@@ -1,0 +1,75 @@
+/* styling for header bar */
+.site-header {
+    overflow: hidden;
+    border-bottom: 2px solid #000000;
+}
+
+.site-header li a{
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.site-header li a:hover{
+    text-decoration: underline;
+}
+
+.site-header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.site-title {
+    font-size: 20pt;
+}
+
+.left-header {
+    float: left;
+}
+
+.right-header {
+    float: right;
+}
+
+/* link styling */
+a {
+    color: #2a7ae2;
+}
+
+a:hover {
+    color: #000000;
+}
+
+/* body and footer */ 
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Helvetica", "Arial", sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* footer */
+.site-footer {
+    border-top: 2px solid #000000;
+}
+
+.footer-col-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-col {
+    padding: 15px;
+}

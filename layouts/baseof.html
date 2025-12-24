@@ -3,11 +3,12 @@
 
   {{ partial "head.html" . }}
 
-  <body>
+  <body class="wrapper">
+
     {{ partial "header.html" . }}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+      <div>
         {{ block "main" . }}
 
 	{{ end }}
