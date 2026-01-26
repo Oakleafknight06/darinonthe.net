@@ -73,3 +73,14 @@ html {
 .footer-col {
     padding: 15px;
 }
+
+.link-container {
+	position:relative;
+	width:100%;
+	max-width:37.5rem;
+	text-align:center;
+	margin:0 auto;
+	padding:3rem 1.25rem 0 1.25rem;
+	box-sizing:border-box;
+}
+
