@@ -1,4 +1,4 @@
-/* styling for header bar */
+/* header */
 .site-header {
     overflow: hidden;
     border-bottom: 2px solid #000000;
@@ -42,7 +42,7 @@ a:hover {
     color: #000000;
 }
 
-/* body and footer */ 
+/* body */ 
 
 * {
     box-sizing: inherit;
@@ -60,6 +60,22 @@ html {
     grid-template-rows: auto 1fr auto;
 }
 
+/* todo, align center and format page content. may not be the right class */
+.page-content {
+	text-align: left;
+	margin: 0 auto;
+}
+
+.link-container {
+	position:relative;
+	width:100%;
+	max-width:37.5rem;
+	text-align:center;
+	margin:0 auto;
+	padding:3rem 1.25rem 0 1.25rem;
+	box-sizing:border-box;
+}
+
 /* footer */
 .site-footer {
     border-top: 2px solid #000000;
@@ -74,13 +90,11 @@ html {
     padding: 15px;
 }
 
-.link-container {
-	position:relative;
-	width:100%;
-	max-width:37.5rem;
-	text-align:center;
-	margin:0 auto;
-	padding:3rem 1.25rem 0 1.25rem;
-	box-sizing:border-box;
+.footer-col-1 {
+    text-align: left;
+}
+
+.footer-col-2 {
+    text-align: right;
 }
 
