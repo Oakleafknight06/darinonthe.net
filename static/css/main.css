@@ -2,10 +2,13 @@
 .site-header {
     overflow: hidden;
     border-bottom: 2px solid #000000;
+    top: 0;
+    background-color: white;
+    position: sticky;
 }
 
-.site-header li a{
-    padding: 15px;
+.site-header li a {
+    margin: 1em;
     text-decoration: none;
     font-weight: bold;
     color: #000000;
@@ -14,24 +17,28 @@
 
 .site-header li a:hover{
     text-decoration: underline;
+    color: #2a7ae2;
 }
 
 .site-header ul {
     list-style-type: none;
     display: flex;
+    float: right;
+    padding-top: 1em;
+    margin-right: 2em;
 }
 
 .site-title {
     font-size: 20pt;
-}
-
-.left-header {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    display: flex;
     float: left;
+    padding-left: 2em;
 }
 
-.right-header {
-    float: right;
-}
 
 /* link styling */
 a {
@@ -54,16 +61,27 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    margin: 0px;
+}
+
 .wrapper {
-    min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+/* FIXME */
+.background-blue {
+    background-color: cornflowerblue;
+    border-radius: 5%;
 }
 
 /* todo, align center and format page content. may not be the right class */
 .page-content {
 	text-align: left;
-	margin: 0 auto;
+	margin-bottom: 100px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .link-container {
@@ -79,6 +97,10 @@ html {
 /* footer */
 .site-footer {
     border-top: 2px solid #000000;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-col-wrapper {
