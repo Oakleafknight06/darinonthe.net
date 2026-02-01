@@ -10,3 +10,6 @@ title: 'Icloud Pwa'
 3. move svg to .local/share/icons/
 4. Change .local/share/applications/chrome-asdgasgsa.desktop
 5. restart to make sure its working
+
+
+umm make this more generic bc I don't have a reason for icloud no more
