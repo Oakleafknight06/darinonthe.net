@@ -57,8 +57,6 @@ a:hover {
 
 html {
     font-family: "Helvetica", "Arial", sans-serif;
-    height: 100%;
-    box-sizing: border-box;
 }
 
 body {
@@ -66,46 +64,44 @@ body {
 }
 
 .wrapper {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-/* FIXME */
-.background-blue {
-    background-color: cornflowerblue;
-    border-radius: 5%;
+    /*display: grid;
+    grid-template-rows: auto 1fr auto;*/
+    position: relative;
+    min-height: 94vh;
 }
 
 /* todo, align center and format page content. may not be the right class */
 .page-content {
 	text-align: left;
-	margin-bottom: 100px;
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 3rem;
 }
 
 .link-container {
-	position:relative;
-	width:100%;
-	max-width:37.5rem;
-	text-align:center;
-	margin:0 auto;
-	padding:3rem 1.25rem 0 1.25rem;
-	box-sizing:border-box;
+	position: relative;
+	width: 100%;
+	max-width: 37.5rem;
+	text-align: center;
+	margin: 0 auto;
+	padding: 3rem 1.25rem 0 1.25rem;
+	box-sizing: border-box;
 }
 
 /* footer */
 .site-footer {
     border-top: 2px solid #000000;
     background-color: white;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
+    height: 2.5rem;
 }
 
 .footer-col-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
 }
 
 .footer-col {
