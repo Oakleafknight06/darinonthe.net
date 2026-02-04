@@ -13,7 +13,7 @@ Welcome to my little corner of the web, where I write my blog posts, showcase pr
     - [ ] Display first couple paragraphs of each post (maybe)
     - [ ] Link back to blog at top or bottom of each page
     - [ ] Link to RSS feed at the bottom of the main page
-- [ ] Set footer to show up only at the bottom of the page, not on top of other content.
+- [x] Set footer to show up only at the bottom of the page, not on top of other content.
 - [ ] Finish content and replace placeholders
 - [ ] Cleanup code—validate HTML, make sure it's properly indented etc somehow?
 - [ ] Accessibility check everything
@@ -26,4 +26,5 @@ Welcome to my little corner of the web, where I write my blog posts, showcase pr
 
 ### Future
 - Site works well on mobile
+    - Adapt header to morph into hamburger menu when smol
 - linksblog thing where I put interesting stuff others have made
