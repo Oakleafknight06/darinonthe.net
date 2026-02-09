@@ -3,11 +3,13 @@
   <h1> {{ .Title }} </h1>
 
   {{ .Content }}
-
-  {{ range .Site.RegularPages }}
+  {{ $var := (.Page.GetPage "./posts").RegularPages }}
+  {{ range $var  }}
 
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <p>{{ .Page.Date | time.Format "2006-01-02" }}</p>
 
   {{ end }}
     
 {{ end }}
+
