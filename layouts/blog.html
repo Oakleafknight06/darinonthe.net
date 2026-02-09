@@ -1,7 +1,7 @@
 {{ define "main" }}
 
   <h1> {{ .Title }} </h1>
-
+  
   {{ .Content }}
   {{ $var := (.Page.GetPage "./posts").RegularPages }}
   {{ range $var  }}
@@ -10,6 +10,8 @@
     <p>{{ .Page.Date | time.Format "2006-01-02" }}</p>
 
   {{ end }}
-    
+
+  <a href="./../posts/index.xml">Subscribe with RSS</a>
+
 {{ end }}
 

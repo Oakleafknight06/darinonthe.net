@@ -10,7 +10,7 @@ title: 'Todo'
     - [x] Show dates below post
     - [x] ~~Display first couple paragraphs of each post~~ (maybe later)
     - [ ] Link back to blog at top or bottom of each page
-    - [ ] Link to RSS feed at the bottom of the main page
+    - [x] Link to RSS feed at the bottom of the main page
 - [x] Set footer to show up only at the bottom of the page, not on top of other content.
 - [x] Finish content and replace placeholders
 - [ ] Cleanup code—validate HTML, make sure it's properly indented etc somehow?
