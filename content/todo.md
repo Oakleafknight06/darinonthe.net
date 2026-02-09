@@ -6,15 +6,16 @@ title: 'Todo'
 
 ## Major publishing blockers:
 - [ ] Blog page:
-    - [ ] List *only* the blog posts, not all pages
-    - [ ] Show dates above post
-    - [ ] Display first couple paragraphs of each post (maybe)
+    - [x] List *only* the blog posts, not all pages
+    - [x] Show dates below post
+    - [x] ~~Display first couple paragraphs of each post~~ (maybe later)
     - [ ] Link back to blog at top or bottom of each page
     - [ ] Link to RSS feed at the bottom of the main page
 - [x] Set footer to show up only at the bottom of the page, not on top of other content.
-- [ ] Finish content and replace placeholders
+- [x] Finish content and replace placeholders
 - [ ] Cleanup code—validate HTML, make sure it's properly indented etc somehow?
 - [ ] Accessibility check everything
+- [ ] Mailto link on links page
 
 ## Extra Fixes
 - [ ] Fix header shifting sideways when scrollbar comes into existence (?)
