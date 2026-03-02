@@ -1,5 +1,7 @@
 ---
 date: '2025-06-05T00:00:00Z'
+draft: true
+layout: 'post'
 title: General Information Security Best Practices
 ---
 

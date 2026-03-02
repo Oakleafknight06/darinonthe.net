@@ -1,6 +1,7 @@
 ---
-categories: Linux
 date: '2025-06-05T00:00:00Z'
+draft: false
+layout: 'post'
 title: How I integrated AppImages into my Linux desktop
 ---
 

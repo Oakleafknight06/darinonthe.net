@@ -1,5 +1,7 @@
 ---
 date: '2025-07-04T00:00:00Z'
+draft: false
+layout: 'post'
 title: Power Management and driver issues for mobile Turing GPUs on Linux
 ---
 
