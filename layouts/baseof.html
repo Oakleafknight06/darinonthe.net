@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 
+  <a href="#main" class="skip-link">Skip to main content</a>
+
   {{ partial "head.html" . }}
 
   <body class="wrapper">
 
     {{ partial "header.html" . }}
 
-    <main class="page-content" aria-label="Content">
+    <main class="page-content" aria-label="Content" id="main">
       <div>
         {{ block "main" . }}
 

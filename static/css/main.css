@@ -39,6 +39,21 @@
     padding-left: 2em;
 }
 
+/* skip to main content button */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px;
+    z-index: 100;
+    background: white;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 
 /* link styling */
 a {
