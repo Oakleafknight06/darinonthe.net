@@ -1,8 +1,9 @@
-<div class="site-header">
+<header role="banner" class="site-header">
 	<div>
 		<p class="site-title">{{ .Site.Title }}</p>
 	</div>
-	<nav>
+
+	<nav role="navigation">
 		<ul>
 			<li><a href="{{ .Site.BaseURL }}">Home</a></li>
 			<li><a href="{{ .Site.BaseURL }}about">About</a></li>
@@ -11,4 +12,4 @@
 			<li><a href="{{ .Site.BaseURL }}links">Links</a></li>
 		</ul>
 	</nav>
-</div>
+</header>
