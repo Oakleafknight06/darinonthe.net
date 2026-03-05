@@ -78,7 +78,6 @@ a:hover {
 }
 
 /* body */ 
-
 * {
     box-sizing: inherit;
 }
@@ -92,13 +91,10 @@ body {
 }
 
 .wrapper {
-    /*display: grid;
-    grid-template-rows: auto 1fr auto;*/
     position: relative;
     min-height: 94vh;
 }
 
-/* todo, align center and format page content. may not be the right class */
 .page-content {
 	text-align: left;
 	margin-left: 20px;
@@ -108,13 +104,13 @@ body {
 }
 
 .link-container {
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
 	max-width: 37.5rem;
 	text-align: center;
 	margin: 0 auto;
-	padding: 3rem 1.25rem 0 1.25rem;
-	box-sizing: border-box;
+	/*padding: 3rem 1.25rem 0 1.25rem;*/
+	/* box-sizing: border-box; */
 }
 
 /* footer */
