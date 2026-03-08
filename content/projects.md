@@ -8,3 +8,8 @@ This page lists the projects I'm working on now, and the things I have made in t
 ## [Startingleaf](https://github.com/Oakleafknight06/startingleaf)
 A bootable container desktop built on [Fedora Atomic](https://fedoraproject.org/atomic-desktops/) and [Secureblue](https://secureblue.dev) with [BlueBuild](https://blue-build.org/).
 
+## [Darinonthenet](https://github.com/Oakleafknight06/darinonthe.net)
+This website! See the *About* page for more details.
+
+## [Homelab](https://github.com/Oakleafknight06/homelab)
+A repository of my homelab configs and useful files. Right now, this is primarily a collection of SystemD unit files for Podman containers.
