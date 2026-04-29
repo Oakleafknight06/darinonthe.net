@@ -39,6 +39,61 @@
     padding-left: 2em;
 }
 
+/* hide mobile navbar when on desktop */
+.nav-narrow {
+    display: none;
+}
+
+/* mobile navbar */
+@media screen and (max-width: 768px) {
+    .nav-wide {
+        display: none;
+    }
+    
+    .nav-narrow {
+	display: flex;
+        position: static;
+    } 
+
+    .nav-narrow summary {
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	min-height: 44px;
+    }
+
+    .nav-links-narrow {
+	list-style: none;
+	background-color: #444;
+	position: absolute;
+	z-index: -1;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	display: none;
+	flex-direction: column;
+	border-top: 1px solid #555;
+    }
+
+    /* Display menu when details element has open attribute */
+    .nav-narrow[open] .nav-links-narrow {
+        display: flex;
+    }
+
+    .nav-links-narrow li {
+       width: 100%;
+    }
+
+    .nav-links-narrow a {
+	display: block;
+	text-decoration: none;
+	padding: 1rem;
+	border-bottom: 1px solid #555;
+	min-height: 44px; /* Touch target size */
+	transition: background-color 0.2s;
+    }
+}
+
 /* skip to main content button */
 .skip-link {
     position: absolute;

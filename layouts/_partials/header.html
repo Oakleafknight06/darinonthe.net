@@ -4,12 +4,27 @@
 	</div>
 
 	<nav role="navigation">
-		<ul>
-			<li><a href="{{ .Site.BaseURL }}">Home</a></li>
-			<li><a href="{{ .Site.BaseURL }}about">About</a></li>
-			<li><a href="{{ .Site.BaseURL }}projects">Projects</a></li>
-			<li><a href="{{ .Site.BaseURL }}blog">Blog</a></li>
-			<li><a href="{{ .Site.BaseURL }}links">Links</a></li>
-		</ul>
+		<div class="nav-wide">
+			<ul>
+				<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+				<li><a href="{{ .Site.BaseURL }}projects">Projects</a></li>
+				<li><a href="{{ .Site.BaseURL }}blog">Blog</a></li>
+				<li><a href="{{ .Site.BaseURL }}links">Links</a></li>
+			</ul>
+		</div>
+
+		<details class="nav-narrow">
+			<summary>
+				<!-- <span aria-hidden="true">&#9776;</span> -->
+				<span>Toggle Menu</span>
+			</summary>
+  
+			<ul class="nav-links-narrow">
+				<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+				<li><a href="{{ .Site.BaseURL }}projects">Projects</a></li>
+				<li><a href="{{ .Site.BaseURL }}blog">Blog</a></li>
+				<li><a href="{{ .Site.BaseURL }}links">Links</a></li>
+			</ul>
+		</details>
 	</nav>
 </header>
