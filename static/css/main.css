@@ -5,6 +5,7 @@
     top: 0;
     background-color: white;
     position: sticky;
+    min-width: 360px;
 }
 
 .site-header li a {
@@ -23,6 +24,10 @@
 .site-header ul {
     list-style-type: none;
     display: flex;
+}
+
+.top-nav {
+    display: flex;
     float: right;
     padding-top: 1em;
     margin-right: 2em;
@@ -39,58 +44,22 @@
     padding-left: 2em;
 }
 
-/* hide mobile navbar when on desktop */
-.nav-narrow {
-    display: none;
-}
-
-/* mobile navbar */
-@media screen and (max-width: 768px) {
-    .nav-wide {
-        display: none;
-    }
-    
-    .nav-narrow {
-	display: flex;
-        position: static;
-    } 
-
-    .nav-narrow summary {
-	cursor: pointer;
+@media screen and (width <= 670px) {
+    .site-title {
+	padding: 0.5em;
 	align-items: center;
-	justify-content: center;
-	min-height: 44px;
     }
-
-    .nav-links-narrow {
-	list-style: none;
-	background-color: #444;
-	position: absolute;
-	z-index: -1;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	display: none;
-	flex-direction: column;
-	border-top: 1px solid #555;
+    .top-nav {
+	margin-right: 0em;
     }
-
-    /* Display menu when details element has open attribute */
-    .nav-narrow[open] .nav-links-narrow {
-        display: flex;
+    .site-header ul {
+        display: grid;
+	margin: 0;
+	padding: 0.5em;
+	top: 0;
     }
-
-    .nav-links-narrow li {
-       width: 100%;
-    }
-
-    .nav-links-narrow a {
-	display: block;
-	text-decoration: none;
-	padding: 1rem;
-	border-bottom: 1px solid #555;
-	min-height: 44px; /* Touch target size */
-	transition: background-color 0.2s;
+    .site-header li {
+        margin: 0.25em;
     }
 }
 
@@ -139,6 +108,7 @@ a:hover {
 
 html {
     font-family: "Helvetica", "Arial", sans-serif;
+    min-width: 250px;
 }
 
 body {
