@@ -1,4 +1,4 @@
 baseURL: 'https://darinonthe.net/'
 disablePathToLower: true
-languageCode: en-us
+locale: 'en-US'
 title: Darin on the Net 
