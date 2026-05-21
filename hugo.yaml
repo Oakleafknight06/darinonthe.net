@@ -2,3 +2,14 @@ baseURL: 'https://darinonthe.net/'
 disablePathToLower: true
 locale: 'en-US'
 title: Darin on the Net 
+outputs:
+  home:
+  - html
+  section: 
+  - html
+  - rss
+  taxonomy:
+  - html
+  term:
+  - html
+
