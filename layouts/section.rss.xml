@@ -37,7 +37,7 @@
 		<link>{{ .Permalink }}</link>
 		<description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>
 		<generator>Hugo</generator>
-		<language>{{ site.Language.Locale }}</language>
+		<language>{{ site.locale }}</language>
 		{{ with $authorEmail }}
 			<managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>
 		{{ end }}
